@@ -12,6 +12,7 @@ Resources:
       GlueVersion: "2.0"
       WorkerType: G.1X
       NumberOfWorkers: 2
+      ScriptLocation: s3://mycodepipelinebucket/script/glue_script.py
 
 
   GlueServiceRole:
