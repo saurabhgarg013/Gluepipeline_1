@@ -5,10 +5,10 @@ Resources:
   MyS3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: 'mytestbucket14'  # Replace with your desired bucket name
-      AccessControl: 'Private'
+      BucketName: 'mytestbucket20'  # Replace with your desired bucket name
+      
 
 Outputs:
   BucketName:
     Description: 'The name of the created S3 bucket'
-    Value: !Ref MyS3Bucket
+    Value: !Ref S3Bucket
