@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CloudFormation template for creating an S3 bucket'
+
+Resources:
+  MyS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: 'mytestbucket13'  # Replace with your desired bucket name
+      AccessControl: 'Private'  
+      Region: 'ap-south-1'  # Set the region for the bucket
+
+Outputs:
+  BucketName:
+    Description: 'The name of the created S3 bucket'
+    Value: !Ref MyS3Bucket
