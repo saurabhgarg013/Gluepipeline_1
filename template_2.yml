@@ -6,10 +6,3 @@ Resources:
     Type: 'AWS::S3::Bucket'
     Properties:
       BucketName: 'mytestbucket13'  # Replace with your desired bucket name
-      AccessControl: 'Private'  
-      Region: 'ap-south-1'  # Set the region for the bucket
-
-Outputs:
-  BucketName:
-    Description: 'The name of the created S3 bucket'
-    Value: !Ref MyS3Bucket
